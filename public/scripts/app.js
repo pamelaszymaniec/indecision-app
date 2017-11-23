@@ -19,55 +19,6 @@ var onFormSubmit = function onFormSubmit(e) {
     }
 };
 
-var template = React.createElement(
-    'div',
-    null,
-    React.createElement(
-        'h1',
-        null,
-        app.title
-    ),
-    app.subtitle && React.createElement(
-        'p',
-        null,
-        app.subtitle
-    ),
-    React.createElement(
-        'p',
-        null,
-        app.options.length > 0 ? 'Here are your options' : 'No options'
-    ),
-    React.createElement(
-        'p',
-        null,
-        app.options.length
-    ),
-    ';',
-    React.createElement(
-        'ol',
-        null,
-        React.createElement(
-            'li',
-            null,
-            'Item one'
-        ),
-        React.createElement(
-            'li',
-            null,
-            'Item two'
-        )
-    ),
-    React.createElement(
-        'form',
-        { onSubmit: onFormSubmit },
-        React.createElement('input', { type: 'text', name: 'option' }),
-        React.createElement(
-            'button',
-            null,
-            'Add Option'
-        )
-    )
-);
 var onRemoveAll = function onRemoveAll() {
     app.options = [];
     render();
@@ -106,16 +57,13 @@ var render = function render() {
         React.createElement(
             'ol',
             null,
-            React.createElement(
-                'li',
-                null,
-                'Item one'
-            ),
-            React.createElement(
-                'li',
-                null,
-                'Item two'
-            )
+            app.options.map(function (option) {
+                return React.createElement(
+                    'li',
+                    { key: option },
+                    option
+                );
+            })
         ),
         React.createElement(
             'form',
