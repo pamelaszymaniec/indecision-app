@@ -1,6 +1,7 @@
-import validator from 'validator';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import IndecisionApp from './components/IndecisionApp2';
 
-const template = <p>This is JSX from webpack</p>;
-ReactDOM.render(template, document.getElementById('app'));
+
+
+ReactDOM.render(<IndecisionApp/>, document.getElementById('app'));
