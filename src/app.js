@@ -2,5 +2,5 @@ import validator from 'validator';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const template = React.createElement('p', {}, 'test');
+const template = <p>This is JSX from webpack</p>;
 ReactDOM.render(template, document.getElementById('app'));
