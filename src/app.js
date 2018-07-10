@@ -4,14 +4,3 @@ import IndecisionApp from './components/IndecisionApp2';
 
 ReactDOM.render(<IndecisionApp/>, document.getElementById('app'));
 
-class OldSyntax {
-    constructor() {
-        this.name = 'Mike';
-    }
-}
-
-const oldSyntax = new OldSyntax();
-console.log(oldSyntax);
-
-// ------------
-
