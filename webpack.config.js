@@ -12,7 +12,11 @@ module.exports = {
             test: /\.js$/,
             exclude: /node_modules/
         }]
-    }
+    },
+    devtool: "cheap-eval-source-map"
+
 };
 
 // loader
+
+//source maps devtools
