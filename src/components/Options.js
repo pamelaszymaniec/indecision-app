@@ -20,4 +20,4 @@ const Options = (props) => {
 
 };
 
-export default Option;
+export default Options;
