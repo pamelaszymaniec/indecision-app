@@ -1,5 +1,5 @@
-# expensify-app
-Expensify App - expense manager - using React, React Router.
+# indecision-app-v2
+Indecision App - simple one page app helps you to make a decision.
 
 Requirements:
 - git
@@ -9,8 +9,8 @@ Requirements:
 To run the app locally:
 
 ```bash
-git clone https://github.com/pamelaszymaniec/expensify-app.git
-cd expensify-app
+git clone https://github.com/pamelaszymaniec/indecision-app-v2.git
+cd indecision-app-v2
 yarn install / npm install
 yarn run dev-server
 open http://localhost:8080
@@ -18,4 +18,3 @@ open http://localhost:8080
 
 [React]: http://facebook.github.io/react/
 [Webpack]: http://webpack.github.io/
-

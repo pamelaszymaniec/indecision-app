@@ -1,5 +1,5 @@
 {
-  "name": "ExpensifyApp",
+  "name": "IndecisionApp",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Pamela Szymaniec",
@@ -30,5 +30,5 @@
     "webpack": "3.1.0",
     "webpack-dev-server": "2.5.1"
   },
-  "repository": "https://github.com/pamelaszymaniec/expensify-app.git"
+  "repository": "https://github.com/pamelaszymaniec/indecision-app-v2.git"
 }
